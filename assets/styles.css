@@ -1,0 +1,101 @@
+body {
+    background-color: grey;
+}
+
+
+.wrapper {
+    background-color: whitesmoke;
+    margin: 0 auto;
+    position: relative;
+    top: 110px;
+    width: 1100px;
+    height: 700px;
+    border-radius: 25px;
+    background-position: left top;
+    background-repeat: repeat;
+}
+
+.buttons{
+    position: relative;
+    left: 20%;
+}
+
+
+.cat{
+    position: relative;
+    left: 20%;
+}
+
+.blue-eyes .eye-color{
+    fill: blue;
+}
+
+.sad .mouth{
+    transform: rotate(180deg) scale(.5);
+    transform-origin: 349px 403px;
+}
+
+@keyframes moveEyes{
+    20%{    
+        transform: translate(-18px,-20px);
+}
+
+    40%{
+        transform: translate(0,0)
+    }
+
+    65%{
+        transform: translate(18px,-20px);
+}
+
+} 
+
+.move-around .inner-eye-group{
+    animation: moveEyes 12s infinite;
+}
+
+@keyframes leftWhiskers{
+    20%{    
+        transform: rotate(5deg)
+}
+
+    60%{
+        transform: rotate(-5deg)
+    }
+
+}
+
+.move-around .left-whiskers{
+    animation: leftWhiskers 3s infinite;
+    transform-origin: 325px 350px;
+}
+
+@keyframes rightWhiskers{
+    5%{    
+        transform: rotate(-3deg)
+}
+
+    90%{
+        transform: rotate(8deg)
+    }
+
+}
+
+.move-around .right-whiskers{
+    animation: rightWhiskers 3s infinite;
+    transform-origin: 325px 350px;
+}
+
+@keyframes move{
+    20% {
+        transform: rotateX(25deg)
+    }
+
+    40% {
+        transform: rotateY(25deg)
+    }
+}
+
+.move-around {
+    animation: move 8s infinite;
+}
